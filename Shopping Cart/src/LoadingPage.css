@@ -1,0 +1,55 @@
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  color: #374151;
+}
+
+.loading-video {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+
+}
+.spinner {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #2563eb; /* blue-600 */
+  border-radius: 50%;
+  animation: scaleDot 1s infinite ease-in-out;
+  transform-origin: center center;
+}
+
+
+.dot1 { top: 0%; left: 50%; transform: translate(-50%, 0); animation-delay: 0s; }
+.dot2 { top: 14.64%; left: 85.36%; transform: translate(-50%, -50%); animation-delay: 0.125s; }
+.dot3 { top: 50%; left: 100%; transform: translate(-50%, -50%); animation-delay: 0.25s; }
+.dot4 { top: 85.36%; left: 85.36%; transform: translate(-50%, -50%); animation-delay: 0.375s; }
+.dot5 { top: 100%; left: 50%; transform: translate(-50%, -100%); animation-delay: 0.5s; }
+.dot6 { top: 85.36%; left: 14.64%; transform: translate(-50%, -50%); animation-delay: 0.625s; }
+.dot7 { top: 50%; left: 0%; transform: translate(-50%, -50%); animation-delay: 0.75s; }
+.dot8 { top: 14.64%; left: 14.64%; transform: translate(-50%, -50%); animation-delay: 0.875s; }
+
+@keyframes scaleDot {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+}

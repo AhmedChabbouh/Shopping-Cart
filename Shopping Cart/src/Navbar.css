@@ -1,0 +1,58 @@
+.navbar {
+  position: sticky;
+  display: flex;
+    
+  align-items: center;
+  background-color: #5a654f;
+  padding: 10px 20px;
+  color: white;
+  font-family: "Galada", cursive;;
+}
+
+.navbar-logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar-links li a:hover {
+  text-decoration: underline;
+}
+
+.navbar-cart  {
+    margin-left: auto;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .navbar-cart {
+    margin-top: 10px;
+  }
+}
